@@ -24,7 +24,7 @@ define( function( require ) {
     var self = this;
 
     // super constructor
-    Node.call( this, { cursor: 'pointer', renderer: 'svg', rendererOptions: { cssTransform: true } } );
+    Node.call( this, { cursor: 'pointer', renderer: 'svg' } );
 
     this.x = x;
     this.y = y;
