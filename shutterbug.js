@@ -177,7 +177,7 @@
     this.getHtmlFragment(function callback(fragment){
       // FIXME btoa is not intended to encode text it is for for 8bit per char strings
       // so if you send it a UTF8 string with a special char in it, it will fail
-      // this SO has a note about handling this: 
+      // this SO has a note about handling this:
       // http://stackoverflow.com/questions/246801/how-can-you-encode-a-string-to-base64-in-javascript
       // also note that btoa is only available in IE10+
       var encodedContent = btoa(generateFullHtmlFromFragment(fragment));
@@ -218,7 +218,6 @@
       getDomSnapshot: getDomSnapshot,
       getHtmlFragment: getHtmlFragment,
       requestHtmlFrag: requestHtmlFrag,
-      generateFullHtmlFromFragment: generateFullHtmlFromFragment,
       htmlSnap: htmlSnap,
       imageSnap: imageSnap,
       iframeReqTimeout: MAX_TIMEOUT
